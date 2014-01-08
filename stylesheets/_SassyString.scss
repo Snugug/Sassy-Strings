@@ -4,14 +4,14 @@
 // Repository: https://github.com/Team-Sass/Sassy-Strings/
 // -------------------------------------------------------------------------------
 
-
+@import "SassyStrings/str-count";
 @import "SassyStrings/str-explode";
 @import "SassyStrings/str-implode";
 @import "SassyStrings/str-lcfirst";
 @import "SassyStrings/str-pad";
 @import "SassyStrings/str-repeat";
 @import "SassyStrings/str-replace";
-@import "SassyStrings/str-rot13";
+@import "SassyStrings/str-rot";
 @import "SassyStrings/str-shuffle";
 @import "SassyStrings/str-split";
 @import "SassyStrings/str-trim";

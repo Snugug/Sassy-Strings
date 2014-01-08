@@ -4,6 +4,11 @@
     @return false;
   }
 
+  @if type-of($needle) != "string" {
+    @warn "`str-last-index` function expecting a string for $needle; #{type-of($needle)} given.";
+    @return false;
+  }
+  
   $index: str-index($string, $needle);
   $result: $index;
 

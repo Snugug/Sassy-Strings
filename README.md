@@ -1,6 +1,3 @@
-Sassy-Strings
-=============
-
 # SassyStrings
 
 Here is a [Compass Extension](http://compass-style.org/) providing you all functions you need to manipulate your [Sass](http://sass-lang.com/) strings.
@@ -37,6 +34,6 @@ If you feel like an explorer, you can have a look at the code [here](https://git
 ## Requirements
 
 * Sass ~> 3.3.0
-* Compass ~> 1.0 (obviously)
+* Compass ~> 1.0
 
 Some functions depend on other functions. If you include functions individually, make sure to check for these dependencies in their respective docs.

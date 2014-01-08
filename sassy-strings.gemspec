@@ -3,16 +3,16 @@ require './lib/sassy-strings'
 
 Gem::Specification.new do |s|
   # General Project Information
-  s.name = "sassy-strings"
+  s.name = "SassyStrings"
+  s.rubyforge_project = "SassyStrings"
   s.version = SassyStrings::VERSION
   s.date = SassyStrings::DATE
-  s.rubyforge_project = "sassy-strings"
   s.rubygems_version = "1.7.2"
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2")
 
   # Author Information
-  s.authors = ["Sam Richard"]
-  s.email = ["snugug@gmail.com"]
+  s.authors = ["Sam Richard", "Hugo Giraudel"]
+  s.email = ["snugug@gmail.com", "hugo.giraudel@gmail.com"]
   s.homepage = "https://github.com/snugug/sassy-strings"
 
   # Project Description
@@ -26,6 +26,6 @@ Gem::Specification.new do |s|
   # s.files +=  Dir.glob("templates/**/*.*")
 
   # Dependent Gems
-
-  s.add_dependency("compass",           [">= 0.12.2"])
+  s.add_dependency("sass",      [">=3.3"])
+  s.add_dependency("compass",           [">= 1.0.0"])
 end

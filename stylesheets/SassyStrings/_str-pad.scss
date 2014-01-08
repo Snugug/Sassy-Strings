@@ -10,7 +10,7 @@
   }
 
   @if type-of($length) != "number" {
-    @warn "`str-pad` function expecting a number for $length; #{type-of($string)} given.";
+    @warn "`str-pad` function expecting a number for $length; #{type-of($length)} given.";
     @return false;
   }
 

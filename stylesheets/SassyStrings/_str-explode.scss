@@ -1,6 +1,11 @@
 @function str-explode($string, $separator, $private: ()) {
   @if type-of($string) != "string" {
-    @warn "`str-explode` function expecting a string; #{type-of($string)} given.";
+    @warn "`str-explode` function expecting a string for $string; #{type-of($string)} given.";
+    @return false;
+  }
+
+  @if type-of($separator) != "string" {
+    @warn "`str-explode` function expecting a string for $separator; #{type-of($separator)} given.";
     @return false;
   }
   

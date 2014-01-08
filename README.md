@@ -4,12 +4,13 @@ Here is a [Compass Extension](http://compass-style.org/) providing you all funct
 
 ## What's in there? 
 
+* `str-count($string, $needle)`: counts number of occurrences of `$needle` in `$string`
 * `str-explode($string, $separator)`: explodes `$string` on `$separator` occurrences 
 * `str-implode($list)`: implodes `$list` into a string
 * `str-last-index($string, $needle)`: returns last index of `$needle` in `$string`
 * `str-lcfirst($string)`: turns first letter of `$string` into lower case
 * `str-pad($string, $length, $pad: " ", $direction: left)`: pads `$string` with `$pad` to match `$length` starting from `$direction`
-* `str-printf($string, $elements)`: replaces occurrences of `%s` in `$string` by elements from `$elements`
+* `str-printf($string, $elements...)`: replaces occurrences of `%s` in `$string` by elements from `$elements`
 * `str-repeat($string, $times)`: repeats `$string` `$times` times
 * `str-replace($string, $old, $new: "", $case-sensitive: true)`: replaces `$old` by `$new` in `$string` respecting `$case-sensitive`
 * `str-reverse($string)`: reverses string

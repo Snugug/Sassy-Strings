@@ -4,21 +4,21 @@ Here is a [Compass Extension](http://compass-style.org/) providing you all funct
 
 ## What's in there? 
 
-* `str-explode`: explodes a string into pieces
-* `str-implode`: implodes a list into a string
-* `str-last-index`: returns last index of needle in string
-* `str-lcfirst`: turns first letter into lower case
-* `str-pad`: pads string to match length
-* `str-printf`: returns string in a specific format
-* `str-repeat`: repeats string n times
-* `str-replace`: replaces string with another one
-* `str-reverse`: reverses string
-* `str-rot`: rotates letters in string
-* `str-shuffle`: shuffles letters in string
-* `str-split`: splits strings into list
-* `str-trim`: removes white spaces before and after string
-* `str-ucfirst`: turns first letter into upper case 
-* `stringify`: casts to string
+* `str-explode($string, $separator)`: explodes `$string` on `$separator` occurrences 
+* `str-implode($list)`: implodes `$list` into a string
+* `str-last-index($string, $needle)`: returns last index of `$needle` in `$string`
+* `str-lcfirst($string)`: turns first letter of `$string` into lower case
+* `str-pad($string, $length, $pad: " ", $direction: left)`: pads `$string` with `$pad` to match `$length` starting from `$direction`
+* `str-printf($string, $elements)`: replaces occurrences of `%s` in `$string` by elements from `$elements`
+* `str-repeat($string, $times)`: repeats `$string` `$times` times
+* `str-replace($string, $old, $new: "", $case-sensitive: true)`: replaces `$old` by `$new` in `$string` respecting `$case-sensitive`
+* `str-reverse($string)`: reverses string
+* `str-rot($string, $rot: 13)`: rotates letters in `$string` of `$rot` position in alphabet
+* `str-shuffle($string)`: shuffles letters in string
+* `str-split($string)`: splits `$string` into a list of characters
+* `str-trim($string)`: removes white spaces before and after `$string`
+* `str-ucfirst($string)`: turns first letter of `$string` into upper case 
+* `stringify($literal)`: casts to string
 
 As well as default Sass core functions:
 

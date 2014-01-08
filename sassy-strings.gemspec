@@ -13,19 +13,18 @@ Gem::Specification.new do |s|
   # Author Information
   s.authors = ["Sam Richard", "Hugo Giraudel"]
   s.email = ["snugug@gmail.com", "hugo.giraudel@gmail.com"]
-  s.homepage = "https://github.com/snugug/sassy-strings"
+  s.homepage = "https://github.com/Team-Sass/Sassy-Strings"
 
   # Project Description
   s.description = "Superpower Strings!"
   s.summary = "Advanced String handling for Sass"
-  s.license = "MIT"
 
   # Files to Include
   s.files  =  Dir.glob("lib/**/*.*")
-  # s.files +=  Dir.glob("stylesheets/**/*.*")
+  s.files +=  Dir.glob("stylesheets/**/*.*")
   # s.files +=  Dir.glob("templates/**/*.*")
 
   # Dependent Gems
   s.add_dependency("sass",      [">=3.3"])
-  s.add_dependency("compass",           [">= 1.0.0"])
+  s.add_dependency("compass",   [">= 1.0.0"])
 end

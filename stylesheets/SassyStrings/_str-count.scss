@@ -1,11 +1,11 @@
 @function str-count($string, $needle) {
   @if type-of($string) != "string" {
-    @warn "`str-last-index` function expecting a string for $string; #{type-of($string)} given.";
+    @warn "`str-count` function expecting a string for $string; #{type-of($string)} given.";
     @return false;
   }  
   
   @if type-of($needle) != "string" {
-    @warn "`str-last-index` function expecting a string for $needle; #{type-of($needle)} given.";
+    @warn "`str-count` function expecting a string for $needle; #{type-of($needle)} given.";
     @return false;
   }
   

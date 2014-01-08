@@ -19,7 +19,8 @@ Here is a [Compass Extension](http://compass-style.org/) providing you all funct
 * `str-split($string)`: splits `$string` into a list of characters
 * `str-trim($string)`: removes white spaces before and after `$string`
 * `str-ucfirst($string)`: turns first letter of `$string` into upper case 
-* `stringify($literal)`: casts to string
+* `str-word-count($string)`: counts number of words in `$string`
+* `stringify($literal)`: casts to stringify
 
 As well as default Sass core functions:
 

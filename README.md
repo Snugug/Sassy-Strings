@@ -1,38 +1,42 @@
 Sassy-Strings
 =============
 
-Advanced string handling for Sass
+# SassyStrings
 
-The following three functions are currently supported:
+Here is a [Compass Extension](http://compass-style.org/) providing you all functions you need to manipulate your [Sass](http://sass-lang.com/) strings.
 
-## str-replace(string, find, replace)
+## What's in there? 
 
-Will return a string with the every needle in the haystack replaced with replace
+* `str-explode`: explodes a string into pieces
+* `str-implode`: implodes a list into a string
+* `str-last-index`: returns last index of needle in string
+* `str-lcfirst`: turns first letter into lower case
+* `str-pad`: pads string to match length
+* `str-printf`: returns string in a specific format
+* `str-repeat`: repeats string n times
+* `str-replace`: replaces string with another one
+* `str-reverse`: reverses string
+* `str-rot`: rotates letters in string
+* `str-shuffle`: shuffles letters in string
+* `str-split`: splits strings into list
+* `str-trim`: removes white spaces before and after string
+* `str-ucfirst`: turns first letter into upper case 
+* `stringify`: casts to string
 
-## split-str(string, key), str-split(string, key)
+As well as default Sass core functions:
 
-Will return a list split by the key. For instance, the string `"Hello World"` split by `" "` would return a list `"Hello", "World"`. Returns false if it can't be split
+* `str-index`
+* `str-slice`
+* `str-length`
+* `str-insert`
+* `to-lower-case`
+* `to-upper-case`
 
-## str-pos(needle, haystack)
+If you feel like an explorer, you can have a look at the code [here](https://github.com/Team-Sass/Sassy-Strings/tree/master/stylesheets).
 
-Find the position of the needle in the haystack. Will return 0 if it's at the first position an -1 if the needle can't be found.
+## Requirements
 
-## str-length(string)
+* Sass ~> 3.3.0
+* Compass ~> 1.0 (obviously)
 
-Finds the length of the string
-
-## str-insert(original, insert, index)
-
-Will place `insert` into `original` at character `index`
-
-## str-extract(string, start-at, end-at = nil)
-
-Will extract the substring from the given characters. *e.g.* `str-extract("abcd", 2, -2) => "bc"`
-
-## to-upper-case(string), to-uppercase(string)
-
-Will transform the string to uppercase
-
-## to-lower-case(string), to-lowercase(string)
-
-Will transform the string to lowercase
+Some functions depend on other functions. If you include functions individually, make sure to check for these dependencies in their respective docs.

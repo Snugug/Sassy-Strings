@@ -1,0 +1,27 @@
+@function str-printf($format, $elements) {
+  @if type-of($string) != "string" {
+    @warn "`str-printf` function expecting a string for $format; #{type-of($string)} given.";
+    @return false;
+  }
+
+  $breaker: '%s'; 
+  $index: str-index($format, '%s');
+
+  @if $index {
+    $result: str-slice($format, 1, $index - 1) + stringify(nth($elements, 1)) + str-slice($format, $index + str-length($breaker));
+    
+    @if length($elements) > 1 {
+      $list: ();
+
+      @for $i from 2 through length($elements) {
+        $list: append($list, nth($elements, $i));
+      }
+
+      @return str-printf($result, $list);
+    }
+
+    @return $result;
+  }
+
+  @return $format;
+}

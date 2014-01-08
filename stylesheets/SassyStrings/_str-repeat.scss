@@ -1,0 +1,14 @@
+@function str-repeat($string, $times) {
+  @if type-of($string) != "string" {
+    @warn "`str-repeat` function expecting a string for $string; #{type-of($string)} given.";
+    @return false;
+  }
+
+  $result: "";
+
+  @for $i from 1 through $times {
+    $result: $result + $string;
+  }
+
+  @return $result;
+}

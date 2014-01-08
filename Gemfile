@@ -1,1 +1,0 @@
-gem 'sassy-strings', '0.4.0'

@@ -4,7 +4,9 @@ Here is a [Compass Extension](http://compass-style.org/) providing you all funct
 
 ## What's in there? 
 
+* `char-at($string, $index)`: returns the character from `$string` at index `$index`
 * `str-count($string, $needle)`: counts number of occurrences of `$needle` in `$string`
+* `str-ends-width($string, $needle)`: returns wether `$string` ends with `$needle`
 * `str-explode($string, $separator)`: explodes `$string` on `$separator` occurrences 
 * `str-implode($list)`: implodes `$list` into a string
 * `str-last-index($string, $needle)`: returns last index of `$needle` in `$string`
@@ -17,6 +19,7 @@ Here is a [Compass Extension](http://compass-style.org/) providing you all funct
 * `str-rot($string, $rot: 13)`: rotates letters in `$string` of `$rot` position in alphabet
 * `str-shuffle($string)`: shuffles letters in string
 * `str-split($string)`: splits `$string` into a list of characters
+* `str-starts-width($string, $needle)`: returns wether `$string` starts with `$needle`
 * `str-trim($string)`: removes white spaces before and after `$string`
 * `str-ucfirst($string)`: turns first letter of `$string` into upper case 
 * `str-word-count($string)`: counts number of words in `$string`

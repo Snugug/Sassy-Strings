@@ -12,7 +12,7 @@
   $index: if(not $case-sensitive, str-index(to-lower-case($string), to-lower-case($old)),  str-index($string, $old));
 
   @if $index > 0 and $new != $old {
-    $result: quote(str-slice($string, 1, $index - 1));
+    $result: if($index > 1, quote(str-slice($string, 1, $index - 1)), '');
 
     @for $i from $index through str-length($string) {
       @if $i < $index or $i >= $index + str-length($old) {
